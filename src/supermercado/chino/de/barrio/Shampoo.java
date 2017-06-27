@@ -6,7 +6,7 @@ public class Shampoo extends Producto{
 	}
 
 	@Override
-	public String decirCapacidad() {
-		return "Contenido: "+(int)this.getCapacidad()+"mm";
+	public void mostrarDetalle() {	
+		System.out.println("Nombre: "+this.getNombre()+" /// "+"Contenido: "+(int)this.getCapacidad()+"mm"+" /// " +"Precio: "+"$"+(int)this.getPrecio());
 	}
 }
