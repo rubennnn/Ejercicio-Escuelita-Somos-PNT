@@ -6,7 +6,7 @@ public class Fruta extends Producto{
 	}
 
 	@Override
-	public String decirCapacidad() {
-		return "Unidad de venta: "+this.getTipoUnidad();
+	public void mostrarDetalle() {
+		System.out.println("Nombre: "+this.getNombre()+" /// "+"Precio: "+"$"+(int)this.getPrecio()+" /// " +"Unidad de venta: "+this.getTipoUnidad());
 	}
 }
