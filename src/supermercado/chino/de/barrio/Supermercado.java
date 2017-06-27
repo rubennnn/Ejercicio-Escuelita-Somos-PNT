@@ -26,7 +26,7 @@ public class Supermercado {
 	}
 	public void mostrarProductos() {
 		for ( Producto producto : listaDeProductos) {
-			System.out.println("Nombre: "+producto.getNombre()+" /// "+producto.decirCapacidad()+" /// " +"Precio: "+"$"+(int)producto.getPrecio());
+			producto.mostrarDetalle();
 		}
 		System.out.println("=============================");
 	}
