@@ -37,12 +37,9 @@ public abstract class Producto implements Comparable<Producto>{
 		return precio;
 	}
 
-	
-
 	@Override
 	public int compareTo(Producto o) {
-		return this.getPrecio()>o.getPrecio()?1:this.getPrecio()<o.getPrecio()?-1:0;
-		
+		return this.getPrecio()>o.getPrecio()?1:this.getPrecio()<o.getPrecio()?-1:0;	
 	}
-	public abstract String decirCapacidad();
+	public abstract void mostrarDetalle();;
 }
