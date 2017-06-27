@@ -6,8 +6,7 @@ public class Bebida extends Producto{
 	}
 
 	@Override
-	public String decirCapacidad() {
-		return this.getTipoUnidad()+": "+this.getCapacidad();
+	public void mostrarDetalle() {
+		System.out.println("Nombre: "+this.getNombre()+" /// "+this.getTipoUnidad()+": "+this.getCapacidad()+" /// " +"Precio: "+"$"+(int)this.getPrecio());
 	}
-
 }
