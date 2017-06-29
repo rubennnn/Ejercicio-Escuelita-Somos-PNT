@@ -41,5 +41,5 @@ public abstract class Producto implements Comparable<Producto>{
 	public int compareTo(Producto o) {
 		return this.getPrecio()>o.getPrecio()?1:this.getPrecio()<o.getPrecio()?-1:0;	
 	}
-	public abstract void mostrarDetalle();;
+	public abstract void mostrarDetalle();
 }
